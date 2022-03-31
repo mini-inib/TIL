@@ -1,0 +1,115 @@
+팀장
+reppo 생성
+
+git bash 창에서
+
+	/dev/ 위치 확인
+
+1.git clone [주소]
+	cd [작업할 파일명]
+
+2.git branch
+
+3.git flow init
+	엔터 엔터 ...
+
+4.git branch
+	develop 생성 확인
+
+5.touch [새로운 파일 생성]
+	git status
+	git add [파일명]
+	git commit
+	 -feat : create [파일명]
+
+6.git push -u origin develop
+	첫 push 일시 -u origin develop 추가
+
+	
+	팀
+
+	github
+1. fork
+	내가 작업할 저장소 복제 모든팀원 진행
+	복제된 내권한의 파일 생성 거기서 주소복사
+
+2. glft clone [주소]
+	/dev/ 위치주의
+
+3.cd [팀파일명]
+	팀장의 develop 파일에 존재 
+
+4. git branch
+
+5. git flow init
+	엔터, 엔터, 엔터....
+	팀원들도 깃플로우 생성
+
+6. gir flow feature start [새로운_브랜치명]
+	vi  [새로운_브랜치명]    작업
+	git status
+	git add [파일명]
+	git commit
+	 -feat : complete [파일명]
+
+7.git flow feature finish [(6)브랜치명]
+	기능개발 완료시
+	develop 에서도 (6)브랜치 동작
+
+8.git push -u origin develop
+	첫 스트림 이라 -u 사용
+
+	lssues 작성
+	github 
+
+
+	컴펌
+
+	github
+1. 컴펌 절차
+	develop 표시 확인
+	<>code  -->  compare&pull request (누름)
+	contribute  -->  open pull request
+	바로 폴리 퀘스트 생성
+ 
+2.팀장의 repo 이동
+	나의 develop 에서 팀장의 develop 이동
+	화살표 브랜치 잘 확인
+
+
+	develop 변경시 pull 받기
+
+팀장
+
+1. git pull origin develop
+	팀장은 자기거 그냥 받으면 됨
+
+팀원
+
+1.git remote
+	develoop 파일에서 위치 확인
+
+2. git remote -v
+	버전 확인
+
+3.git remote add upstream [주소]
+                      [저장파일명]
+	팀장 develop 주소 챙김
+
+4.git remoer -v
+	버전 확인
+
+5. git fetch [패치목적지] develop
+	패치는 FECH_HEAD 브래드에 임시 담아둠
+	원하는 부분 이나 전체를 받을수 있다
+
+6. git merge FETCH-HEAD
+	merge 작성시 반영
+
+7. git pull upstream deveiop
+            [패치목적지]
+	5-6번 과정이 번거로울시 바로 받음
+
+8. git flow feature start fb-lc
+	한사이클 완료 
+	다른 피지 브랜츠 사용시 입력
