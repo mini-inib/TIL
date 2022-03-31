@@ -33,7 +33,7 @@ git bash 창에서
 	내가 작업할 저장소 복제 모든팀원 진행
 	복제된 내권한의 파일 생성 거기서 주소복사
 
-2. glft clone [주소]
+2. git clone [주소]
 	/dev/ 위치주의
 
 3.cd [팀파일명]
@@ -46,7 +46,7 @@ git bash 창에서
 	팀원들도 깃플로우 생성
 
 6. gir flow feature start [새로운_브랜치명]
-	vi  [새로운_브랜치명]    작업
+	vi  [새로운_브랜치명]    작
 	git status
 	git add [파일명]
 	git commit
